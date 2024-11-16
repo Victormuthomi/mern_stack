@@ -1,0 +1,22 @@
+{
+  "name": "goals_app",
+  "version": "1.0.0",
+  "description": "A goal fullstack app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": " node backend/server.js",
+    "server" : "nodemon backend/server.js"
+  },
+  "author": "victor",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}

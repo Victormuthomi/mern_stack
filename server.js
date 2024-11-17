@@ -12,8 +12,13 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false}))
 
+//goals routes
+app.use('/api/goals', require('./routes/goalRoutes')) 
 
-app.use('/api/goals', require('./routes/goalRoutes'))
+//users routes
+app.use('/api/users', require('./routes/userRoutes'))
+
+
 
 app.use(errorHandler)
 
